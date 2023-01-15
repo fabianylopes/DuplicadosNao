@@ -1,20 +1,12 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class App {
     public static void main(String[] args) {
 
-        List<String> fruits = new ArrayList<>();
-        fruits.add("pera");
-        fruits.add("uva");
-        fruits.add("maçã");
-        fruits.add("melancia");
-
-        List<String> mFruits = new ArrayList<>();
-        mFruits.add("melancia");
-        mFruits.add("manga");
-        mFruits.add("morango");
-        mFruits.add("mamão");
+        List<String> fruits = Arrays.asList("pera", "uva", "maçã", "melancia");
+        List<String> mFruits = Arrays.asList("melancia", "manga", "morango", "mamão", "uva");
 
         for (int i = 0; i < mFruits.size(); i++) {
             if (fruits.contains(mFruits.get(i))) {
